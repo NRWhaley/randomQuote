@@ -1,6 +1,10 @@
 import React from 'react';
 
+const quoteBoxStyle = {
+  display: 'flex',
+  justifyContent: 'center'
 
+}
 
 class App extends React.Component {
     constructor(props){
@@ -22,9 +26,11 @@ class App extends React.Component {
         currentQuote: '',
         currentAuthor: ''
       }
+      this.handleClick = this.handleClick.bind(this)
 
 
     }
+
 
 
     handleClick(e){
@@ -49,11 +55,11 @@ class App extends React.Component {
 
       return (
 
-        <div id="quote-box">
-          <p id="text">{content.quote}</p>
+        <div id="quote-box" style={quoteBoxStyle}>
+          <p id="text" >{content.quote}</p>
           <p id="author">{content.author}</p>
-          <button id="new-quote" onClick={this.handleClick.bind(this)}>New Quote</button>
-          <a id="tweet-quote" onClick={this.handleClick.bind(this)}>Tweet Quote</a>
+          <button id="new-quote" onClick={this.handleClick}>New Quote</button>
+          <a id="tweet-quote" onClick={this.handleClick}>Tweet Quote</a>
         </div>
 
       )
