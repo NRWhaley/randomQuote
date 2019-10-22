@@ -1,8 +1,9 @@
 import React from 'react';
 
 const quoteBoxStyle = {
-  display: 'flex',
-  justifyContent: 'center'
+  display: 'flex-column',
+  textAlign: 'center',
+  contentAlign : 'center'
 
 }
 
@@ -59,7 +60,7 @@ class App extends React.Component {
           <p id="text" >{content.quote}</p>
           <p id="author">{content.author}</p>
           <button id="new-quote" onClick={this.handleClick}>New Quote</button>
-          <a id="tweet-quote" onClick={this.handleClick}>Tweet Quote</a>
+          <a id="tweet-quote" href="twitter.com/intent/tweet" onClick={this.handleClick}>Tweet Quote</a>
         </div>
 
       )
