@@ -13,7 +13,13 @@ class App extends React.Component {
 
     render(){
       return (
-        <div>Hello World</div>
+        <div id="quote-box">
+          <p id="text">hi</p>
+          <p id="author">hi</p>
+          <button id="new-quote">New Quote</button>
+          <a id="tweet-quote" >hello</a>
+
+        </div>
       )
     }
 
