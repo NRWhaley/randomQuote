@@ -1,5 +1,6 @@
 {
   "name": "randomquote",
+  "author": "Nick W",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
